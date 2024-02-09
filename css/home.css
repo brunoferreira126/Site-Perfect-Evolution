@@ -260,12 +260,8 @@ section .portfolio{
 .contatos{
 
     width:100%;
-    
-    background-size: cover;
-    background-attachment: fixed;
     margin: 25px auto;
     border: none;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -353,7 +349,14 @@ footer img{
  
 @media only screen and (max-width: 1020px) {
 /* Adicionando media query ao topo */
-    .topo{
+   
+p{
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+.topo{
         width: auto;
         font-size: 14px;
         margin-top: 2px;
@@ -400,12 +403,22 @@ footer img{
 
     }
 
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+    }
+    .interface{
+        flex-direction: column;
+        gap: 20px;
+    }
+
    /* Adaptando a tela dos incones dos contatos a telas menores */
-    .container-contatos-icones figure{
+   
+   .container-contatos-icones figure{
 
     
         margin: 25px auto;
-        
+
         gap: 10px;
  
 }
