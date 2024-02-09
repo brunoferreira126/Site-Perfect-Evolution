@@ -284,13 +284,15 @@ section .portfolio{
 }
 
 .container-contatos-icones{
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
 }
 .container-contatos-icones figure{
 
-    
+    /* Aqui eu configuro os icones e o botão*/
     margin: 25px auto;
     display: flex;
     justify-content: center;
@@ -398,11 +400,22 @@ footer img{
 
     }
 
-    
+   /* Adaptando a tela dos incones dos contatos a telas menores */
+    .container-contatos-icones figure{
 
+    
+        margin: 25px auto;
+        
+        gap: 10px;
  
 }
+.container-contatos-icones figure button{
 
+    width: 200px;
+    height: auto;
+}
+
+}
 
 
    
