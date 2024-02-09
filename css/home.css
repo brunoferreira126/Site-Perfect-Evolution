@@ -353,7 +353,7 @@ footer img{
 /* Adicionando media query ao topo */
     .topo{
         width: auto;
-        font-size: 12px;
+        font-size: 14px;
         margin-top: 2px;
         justify-content: center;
         gap: 20px;
