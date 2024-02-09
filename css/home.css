@@ -1,0 +1,408 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color:#d1cbcb
+}
+
+
+/* Estilo  padrão do código */
+
+h1{
+    width: 100%;
+    margin: 30px auto;
+    font-weight: bold;
+    color:  #00B1AA;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+h2{
+
+    font-size: 25px;
+    font-weight: bold;
+    text-align:center;
+   
+    
+   
+}
+
+
+
+ p{
+    font-size: 15px;
+    text-align: center;
+    padding: 15px 0;
+    margin-left:40px;
+    
+
+}
+
+button{
+    background: linear-gradient(to right, #ED3237, #F8A04B);
+    
+    color: #fff;
+    padding: 5px 25px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* Estilo do topo*/
+
+.topo{
+    width: 100%;
+    margin-top: 5px;
+    background-color: black;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.topo img{
+    width: 60px;
+   
+}
+
+
+.topo a{
+    text-decoration: none;
+    color: #ada9a9;
+}
+
+a:hover{
+    background:  linear-gradient(to right, #00B1AA, #215C7C); 
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/*  finalização do Estilo do topo*/
+
+
+/* Estilo seçao sobre*/
+
+.sobre{
+    width: auto;
+    height: auto;
+    margin: 10px auto;
+    
+}
+
+
+
+.container-sobre{
+    width: 100%;
+
+    color: #fff;
+    display: flex;
+    flex-direction:  row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.container-sobre h1, h2, h3, p{
+
+    position: relative;
+    animation: subir 2s ease-out;
+
+}
+
+
+
+.container-sobre img{
+
+    width: 300px;
+    
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    display: flex;
+    
+
+}
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top: 80px;
+    }
+}
+
+@keyframes subir{
+    0%{
+        bottom:0;
+    }
+    100%{
+        bottom: 10px;
+    }
+}
+
+.button-contato-sobre{
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    left: 480px;
+    padding: 10px 100px;
+    border-radius: 50px;
+}
+/* Fim da seçao sobre*/
+
+
+
+/* Estilo seçao Serviços*/
+
+.servicos{
+ width: 100%;
+ height: 100vh;
+}
+
+.container-serviços{
+
+    width: 70%;
+    height: auto;
+    margin: 10px auto auto auto;
+    padding-right:  40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 30px;
+}
+
+.criacao-visual i{
+
+    font-size: 70px;
+    margin: 30px auto;
+  
+    color: #00B1AA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.criacao-visual h4{
+
+    
+    text-align: center;
+}
+
+
+.criacao-visual p{
+    text-align: justify;
+}
+
+/* Fim da seçao Serviços*/
+
+/* Estilo seçao Alguns Serviços*/
+
+section .portfolio{
+
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 0 40px 10px #706e6e;
+
+}
+
+.interface{
+    display: flex;
+    justify-content: space-around;
+
+}
+.img-port{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    height: 460px;
+    background-color: black;
+    background-image: url("/img/rolagem\ logos.png");
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 10s;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+.img-port:hover{
+    background-position: 100% 100%;
+    
+}
+.img-port2{
+
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    height: 460px;
+    background-color:#fff;
+    background-image: url("/img/rolagem\ site.png");
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 10s;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.img-port2:hover{
+    background-position: 100% 100%;
+    
+}
+
+/* Fim da seçao Alguns Serviços*/
+
+
+/* Estilo seçao Contatos*/
+
+
+.contatos{
+
+    width:100%;
+    
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 25px auto;
+    border: none;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+
+
+}
+
+.container-contatos{
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-contatos-icones{
+    display: flex;
+    flex-direction: row;
+
+}
+.container-contatos-icones figure{
+
+    
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.container-contatos-icones figure button{
+
+    width: 300px;
+    height: auto;
+}
+
+
+
+.container-contatos-icones img{
+
+    width: 60px;
+}
+
+.container-contatos-icones:hover{
+    transform: scale(1.5);
+}
+/* Fim da seçao contatos*/
+
+
+/* Estilo seçao Localização*/
+
+.localizacao{
+
+    width: 100%;
+    margin: 30px auto;
+}
+/* obs: lembrar que a altura e largura do iframe estão configurados no prórprio iframe do html*/
+/* Fim da seçao Localização*/
+
+
+/* Estilo seçao footer*/
+footer{
+    width: 100%;
+    height: auto;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+footer img{
+    width: 40px;
+}
+/* finalizando seçao footer*/
+
+
+/* Estilo padrão do código */
+
+/* Adicionando media query para telas menores */
+ 
+@media only screen and (max-width: 1020px) {
+/* Adicionando media query ao topo */
+    .topo{
+        width: auto;
+        font-size: 12px;
+        margin-top: 2px;
+        justify-content: center;
+        gap: 20px;
+       
+        
+    }
+   /* Adicionando media query ao sobre */
+    .container-sobre{
+        text-align: center;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        gap: 80px;
+    }
+    /* Adicionando media query a tag p do sobre */
+    .container-sobre p{
+        font-size: 12px;
+        width: auto;
+        height: auto;
+       
+        padding: 15px 0;
+        margin-left: 10px;
+     
+        
+    
+    }
+    /* Diminuindo tamanho da imagem com media querias da seção sobre */
+    .container-sobre img{
+        width: 250px;
+    }
+/* Adaptando a tela de serviços a telas menores */
+    .servicos {
+        width: auto;
+        height: auto;
+        
+
+    }
+    .container-serviços{
+       
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    
+
+ 
+}
+
+
+
+   
